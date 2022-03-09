@@ -48,14 +48,14 @@ function App() {
             }
           });
         });
+        resetTurns();
       } else {
-        console.log("not");
+        resetTurns();
       }
-      resetTurns();
     }
   }, [choiceOne, choiceTwo]);
 
-  
+  console.table(cards);
 
   return (
     <div className="App">
